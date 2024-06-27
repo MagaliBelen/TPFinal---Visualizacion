@@ -33,9 +33,9 @@ body, html {
     <a href="#home"><img class="logo" src="../imagenes/logo.png" alt=""></a>
     <div class="w3-right w3-hide-small menu-links">
       <a href="./secciones/turnos.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> TURNOS</a>
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
-      <a href="#tratamientos" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i> TRATAMIENTOS</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
+      <a href="../index.html#tratamientos" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i> TRATAMIENTOS</a>
+      <a href="../index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
       <a href="./secciones/iniciarsesion.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> INICIAR SESION</a>
     </div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -48,9 +48,9 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
   <a href="./secciones/turnos.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
-  <a href="#tratamientos" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+  <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
+  <a href="../index.html#tratamientos" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
+  <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
   <a href="./secciones/iniciarsesion.html" onclick="w3_close()" class="w3-bar-item w3-button">INICIAR SESION</a>
 </nav>
 
@@ -68,10 +68,15 @@ body, html {
             </button>
           </p>
           <p>
-            <button class="w3-button w3-black w3-block" type="submit">
+            <button href="" class="w3-button w3-block" type="submit">
               ¿No tenes cuenta? Hace clic aca
             </button>
           </p>
+          <div class="olvidaste">
+          <a href="#">¿Olvidaste tu email?</a>
+        
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
         </form>
       </div>
     </div>

@@ -1,0 +1,14 @@
+.olvidaste{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.olvidaste a{
+    text-decoration: none;
+    padding: 8px;
+}
+
+.olvidaste a:hover{
+    text-decoration: underline;
+}
