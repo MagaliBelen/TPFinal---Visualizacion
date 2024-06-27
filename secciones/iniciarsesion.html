@@ -36,7 +36,7 @@ body, html {
       <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
       <a href="../index.html#tratamientos" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i> TRATAMIENTOS</a>
       <a href="../index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
-      <a href="./secciones/iniciarsesion.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> INICIAR SESION</a>
+      <a href="../secciones/iniciarsesion.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> INICIAR SESION</a>
     </div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -51,13 +51,13 @@ body, html {
   <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
   <a href="../index.html#tratamientos" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
   <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
-  <a href="./secciones/iniciarsesion.html" onclick="w3_close()" class="w3-bar-item w3-button">INICIAR SESION</a>
+  <a href="../secciones/iniciarsesion.html" onclick="w3_close()" class="w3-bar-item w3-button">INICIAR SESION</a>
 </nav>
 <main>
 <!-- Contact Section -->
 <div class="w3-container  w3-display-container " style="height:100vh;">
-    <div class="w3-display-left w3-card-4 w3-container w3-padding-large w3-light-grey" style="max-width:400px; width: 90%;">
-      <h3 class="w3-center">INICIAR SESION</h3>
+    <div class="w3-display-left w3-card-4 w3-container w3-padding-large w3-light-grey" style="max-width:400px; width: 90%; height:100vh">
+      <h3 class="w3-center" style="margin-top: 50px;">INICIAR SESION</h3>
       <div style="margin-top:48px">
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
@@ -68,7 +68,7 @@ body, html {
             </button>
           </p>
           <p>
-            <button href="" class="w3-button w3-block" type="submit">
+            <button href="../secciones/crearcuenta.html" class="w3-button w3-block" type="submit">
               ¿No tenes cuenta? Hace clic aca
             </button>
           </p>
@@ -77,6 +77,9 @@ body, html {
         
           <a href="#">¿Olvidaste tu contraseña?</a>
         </div>
+        <hr class="w3-grey">
+        <p class="w3-center ayuda"><a href="#" >¿Necesitás ayuda?
+        </a></p>
         </form>
       </div>
     </div>
