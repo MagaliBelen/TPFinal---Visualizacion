@@ -20,7 +20,9 @@ main{
     background-position: center center; /* Centra la imagen en la pantalla */
 }
 
-
+.ayuda{
+    margin: 0;
+}
 
 .ayuda a{
     text-decoration: none;
