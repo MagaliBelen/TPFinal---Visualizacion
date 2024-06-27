@@ -12,3 +12,10 @@
 .olvidaste a:hover{
     text-decoration: underline;
 }
+
+main{
+    background-image: url(../imagenes/pareja\,iniciosesion4.jpg) !important;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en la pantalla */
+}
