@@ -40,7 +40,6 @@ footer{
     justify-content: space-evenly !important;
     margin: 0 !important;
     width: 100% !important;
-    height: 400px !important;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -54,17 +53,31 @@ footer p{
 }
 
 
-
 .medios-de-pago img{
-    width: 71px;
+    width: 55px;
     height: auto;
 
+}
+
+.redes {
+    text-align: center;
+}
+
+.medios-de-pago{
+    text-align: center;
+    
+}
+
+footer div{
+    margin-top: 30px;
 }
 
 @media (width:800px){
    footer{
     display: flex;
     flex-direction: column;
-    height: 5000px;
+    
    }
+
+
 }
