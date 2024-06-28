@@ -36,10 +36,35 @@
 
 footer{
     background-color: #7BB094 !important;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 400px !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
 
 }
 
+
 footer p{
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
+}
+
+
+
+.medios-de-pago img{
+    width: 71px;
+    height: auto;
+
+}
+
+@media (width:800px){
+   footer{
+    display: flex;
+    flex-direction: column;
+    height: 5000px;
+   }
 }
