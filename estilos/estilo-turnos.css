@@ -1,7 +1,7 @@
 
-body {
+main {
   background-color: #f2f2f2;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -16,6 +16,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 800px;
+
 }
 
 h1 {
@@ -66,13 +67,16 @@ h1 {
   transition: width 0.3s ease;
 }
 
-.pet-options {
+
+.opciones-tratamiento {
   display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 30px;
 }
 
-.pet-option {
+.opcion-tratamiento {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,21 +88,15 @@ h1 {
   background-color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
-.pet-option:hover {
+.opcion-tratamiento:hover {
   background-color: #f2f2f2;
 }
 
-.pet-icon {
-  font-size: 40px;
-  color: #333;
-}
-
-.pet-label {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #333;
+.opcion-tratamiento.clicked {
+  background-color:#7BB094 ;
 }
 
 .buttons {

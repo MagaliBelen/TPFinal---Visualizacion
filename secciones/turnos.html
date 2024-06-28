@@ -1,65 +1,179 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Milagros Energeticos</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../estilos/style.css">
-<link rel="stylesheet" href="../estilos/estilo-turnos.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="../imagenes/logo.png">
+  <title>Milagros Energeticos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../estilos/style.css">
+  <link rel="stylesheet" href="../estilos/estilo-turnos.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="../imagenes/logo.png">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
 
 </head>
+
 <body>
-  
-  <div class="container">
-    <h1>Solicitar turno</h1>
-<br>
-    <div class="progress">
-      <div class="step active">
-        <span class="step-label">Tratamiento</span>
-      </div>
-      <div class="step">
-        <span class="step-label">Fecha y Hora</span>
-      </div>
-      <div class="step">
-        <span class="step-label">Confirmar</span>
+  <header>
+    <!-- Navbar (sit on top) -->
+    <div>
+      <div class="w3-bar w3-card" id="myNavbar">
+        <a href="../index.html"><img class="logo" src="../imagenes/logo.png" alt=""></a>
+        <div class="w3-right w3-hide-small menu-links">
+          <a href="./secciones/turnos.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> TURNOS</a>
+          <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
+          <a href="../index.html#tratamientos" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i>
+            TRATAMIENTOS</a>
+          <a href="../index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
+          <a href="../secciones/iniciarsesion.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> INICIAR
+            SESION</a>
+        </div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
 
-    <div class="progress-bar">
-      <div class="progress-bar-fill" style="width: 33%"></div>
-    </div>
-<br>
-    <h2>Tipo de tratamiento</h2>
-    <p>Selecciona el tipo de tratamiento que se va a atender:</p>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none"
+      id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar
+        ×</a>
+      <a href="./secciones/turnos.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS</a>
+      <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
+      <a href="../index.html#tratamientos" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
+      <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
+      <a href="../secciones/iniciarsesion.html" onclick="w3_close()" class="w3-bar-item w3-button">INICIAR SESION</a>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Solicitar turno</h1>
+      <br>
+      <div class="progress">
+        <div class="step active">
+          <span class="step-label">Tratamiento</span>
+        </div>
+        <div class="step">
+          <span class="step-label">Fecha y Hora</span>
+        </div>
+        <div class="step">
+          <span class="step-label">Confirmar</span>
+        </div>
+      </div>
 
-    <div class="pet-options">
-      <div class="pet-option" id="perro">
-        <i class="pet-icon fas fa-dog"></i>
-        <span class="pet-label">Perro</span>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 33%"></div>
       </div>
-      <div class="pet-option" id="gato">
-        <i class="pet-icon fas fa-cat"></i>
-        <span class="pet-label">Gato</span>
-      </div>
-      <div class="pet-option" id="ave">
-        <i class="pet-icon fas fa-dove"></i>
-        <span class="pet-label">Ave</span>
-      </div>
-      <div class="pet-option" id="roedor">
-        <i class="pet-icon fas fa-mouse"></i>
-        <span class="pet-label">Roedor</span>
-      </div>
+      <br>
+      <h2>Tipo de tratamiento</h2>
+      <p>Selecciona el tipo de tratamiento que se va a atender:</p>
+<div class="opciones-tratamiento">
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+         
+            <div class="w3-container">
+              <h5>Ventosas</h5>
+              <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+        
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+         
+            <div class="w3-container">
+              <h5>Acupuntura</h5>
+              <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+            </div>
+         
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+          
+            <div class="w3-container">
+              <h5>Masajes</h5>
+              <p class="w3-opacity">Profesional: Gabriela Godoy</p>
+            </div>
+          
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+         
+            <div class="w3-container">
+              <h5>Kinesiologia</h5>
+              <p class="w3-opacity">Profesional: Marcos Venegas</p>
+         
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+         
+            <div class="w3-container">
+              <h5>Quiropraxia</h5>
+              <p class="w3-opacity">Profesional: Pedro Gonzalez</p>
+            </div>
+          
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+          
+            <div class="w3-container">
+              <h5>Moxibustion</h5>
+              <p class="w3-opacity">Profesional: Lucia Gutierrez</p>
+            </div>
+         
+        </div>
     </div>
 
     <div class="buttons">
       <p><button class="w3-button w3-light-grey w3-block">Volver</button></p>
       <p><button class="w3-button w3-light-grey w3-block">Siguiente</button></p>
     </div>
-  </div>
+   
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1719346534496!5m2!1ses!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="medios-de-pago">
+      <h5>Nuestros medios de pagos</h5>
+      <img src="../imagenes/visa.jpg" alt="visa">
+      <img src="../imagenes/mercadopago.png" alt="mercado pago">
+      <img src="../imagenes/efectivo.png" alt="efectivo">
+    </div>
+
+    <div class="redes">
+      <h5>Seguinos en nuestras redes</h5>
+      <i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i>
+      <i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i>
+      <i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i>
+      <i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i>
+    </div>
+
+    <p class="w3-center">Diseñado por Ayala Lazarte, Nadia | Castelli Garaycochea, Mora | Julian Borrello, Magali</p>
+  </footer>
 
   <script>
     // Add event listeners to pet options
@@ -88,8 +202,47 @@
       // (Implement logic for navigation)
     });
   </script>
+  <script>
+
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+
+  </script>
+
+<script>
+  // Seleccionar todos los elementos con la clase 'color-box'
+  const boxes = document.querySelectorAll('.opcion-tratamiento');
+
+  // Añadir un evento de clic a cada elemento
+  boxes.forEach(box => {
+      box.addEventListener('click', () => {
+          box.classList.toggle('clicked');
+      });
+  });
+</script>
 
   <!-- Font Awesome Icons (replace with your CDN link) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </body>
+
 </html>
