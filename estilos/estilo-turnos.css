@@ -1,0 +1,107 @@
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+.step.active {
+  background-color:#7BB094 ;
+}
+
+.step-label {
+  font-size: 14px;
+  color: #333;
+  
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.progress-bar-fill {
+  height: 4px;
+  background-color: #7BB094 ;
+  border-radius: 5px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.pet-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.pet-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pet-option:hover {
+  background-color: #f2f2f2;
+}
+
+.pet-icon {
+  font-size: 40px;
+  color: #333;
+}
+
+.pet-label {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

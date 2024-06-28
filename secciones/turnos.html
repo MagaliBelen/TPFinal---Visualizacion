@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Milagros Energeticos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../estilos/style.css">
+<link rel="stylesheet" href="../estilos/estilo-turnos.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../imagenes/logo.png">
+
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Solicitar turno</h1>
+<br>
+    <div class="progress">
+      <div class="step active">
+        <span class="step-label">Tratamiento</span>
+      </div>
+      <div class="step">
+        <span class="step-label">Fecha y Hora</span>
+      </div>
+      <div class="step">
+        <span class="step-label">Confirmar</span>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar-fill" style="width: 33%"></div>
+    </div>
+<br>
+    <h2>Tipo de tratamiento</h2>
+    <p>Selecciona el tipo de tratamiento que se va a atender:</p>
+
+    <div class="pet-options">
+      <div class="pet-option" id="perro">
+        <i class="pet-icon fas fa-dog"></i>
+        <span class="pet-label">Perro</span>
+      </div>
+      <div class="pet-option" id="gato">
+        <i class="pet-icon fas fa-cat"></i>
+        <span class="pet-label">Gato</span>
+      </div>
+      <div class="pet-option" id="ave">
+        <i class="pet-icon fas fa-dove"></i>
+        <span class="pet-label">Ave</span>
+      </div>
+      <div class="pet-option" id="roedor">
+        <i class="pet-icon fas fa-mouse"></i>
+        <span class="pet-label">Roedor</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <p><button class="w3-button w3-light-grey w3-block">Volver</button></p>
+      <p><button class="w3-button w3-light-grey w3-block">Siguiente</button></p>
+    </div>
+  </div>
+
+  <script>
+    // Add event listeners to pet options
+    const petOptions = document.querySelectorAll('.pet-option');
+    petOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        // Remove active class from all options
+        petOptions.forEach(o => o.classList.remove('active'));
+
+        // Add active class to clicked option
+        option.classList.add('active');
+      });
+    });
+
+    // Add event listener to "Volver" button
+    const volverButton = document.getElementById('volver');
+    volverButton.addEventListener('click', () => {
+      // Go back to previous step
+      // (Implement logic for navigation)
+    });
+
+    // Add event listener to "Siguiente" button
+    const siguienteButton = document.getElementById('siguiente');
+    siguienteButton.addEventListener('click', () => {
+      // Proceed to next step
+      // (Implement logic for navigation)
+    });
+  </script>
+
+  <!-- Font Awesome Icons (replace with your CDN link) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
