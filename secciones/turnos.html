@@ -237,11 +237,11 @@
   </div>
   <br>
   <h2>Confirmación del turno</h2>
-  <br>
+ 
 <div class="confirmacion-turno">
-  <p>Tratamiento: Ventosas</p>
-  <p>Profesional: Milagros Pereyra</p>
-  <p>Fecha y Hora: Lunes 8/7/2024 13:00hs</p>
+  <p>Tratamiento: <b>Ventosas</b></p>
+  <p>Profesional: <b>Milagros Pereyra</b></p>
+  <p>Fecha y Hora: <b>Lunes 8/7/2024 13:00hs</b></p>
   <p>El costo de la consulta es de $15000</p>
 </div>
 
@@ -250,15 +250,21 @@
     <p><button class="w3-button w3-light-grey w3-block">Siguiente</button></p> -->
    
     <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Volver</button>
-  <a href="../index.html"><button class="w3-button w3-light-grey" onclick="">Confirmar</button></a>
+  <button class="w3-button w3-light-grey" onclick="" id="openPopupBtn">Finalizar</button>
 </div>
 <br>
 <div  class="w3-center">
-<a href="../index.html"><button class="w3-button w3-light-grey" onclick="">Cancelar solcititud</button></a>
+<a href="../index.html"><button class="w3-button w3-light-grey" onclick="">Cancelar solicititud</button></a>
 </div> 
 </div>
 
+<div id="popup" class="popup">
+  <button class="closeBtn" onclick="closePopup()">Cerrar</button>
+  <h2>Este es un popup</h2>
+  <p>Contenido del popup.</p>
+</div>
 
+<div id="overlay" class="overlay"></div>
   </main>
   <!-- Footer -->
   <footer>
@@ -392,6 +398,25 @@
 
 
   </script>
+
+<script>
+  // Obtén los elementos del DOM
+  const openPopupBtn = document.getElementById('openPopupBtn');
+  const popup = document.getElementById('popup');
+  const overlay = document.getElementById('overlay');
+
+  // Función para abrir el popup
+  openPopupBtn.onclick = function() {
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+  };
+
+  // Función para cerrar el popup
+  function closePopup() {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+  }
+</script>
 
   <!-- Font Awesome Icons (replace with your CDN link) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
