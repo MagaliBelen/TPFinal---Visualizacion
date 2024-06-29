@@ -1,4 +1,5 @@
 
+
 main {
   background-color: #f2f2f2;
   display: flex !important;
@@ -45,9 +46,13 @@ h1 {
 
 .step.active {
   background-color:#7BB094 ;
+  width: 40% !important;
 }
 
-
+.step{
+  width: 40% !important;
+  margin:5px;
+}
 
 .progress-bar {
   flex: 1;
@@ -126,4 +131,56 @@ th {
 .available {
   color: blue;
   cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  h1{
+    font-size: 25px !important;
+  }
+
+h2{
+  font-size: 20px !important;
+}
+ 
+p{
+  font-size: 15px !important;
+}
+  .step{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  table{
+    font-size: 12px !important;
+  }
+
+  thead {
+      display: none;
+  }
+  tbody, tr, td, th {
+      display: block;
+      width: 100%;
+  }
+  tr {
+      margin-bottom: 10px;
+  }
+  td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      padding: 10px;
+  }
+  td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 10px;
+      text-align: left;
+      font-weight: bold;
+  }
 }

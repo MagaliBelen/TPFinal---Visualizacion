@@ -20,6 +20,10 @@ main{
     background-position: center center; /* Centra la imagen en la pantalla */
 }
 
+form{
+    font-family: "Raleway", sans-serif;
+}
+
 .ayuda{
     margin: 0;
 }
