@@ -4,234 +4,30 @@
 <title>Milagros Energeticos</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./estilos/style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="./imagenes/logo.png">
+<link rel="stylesheet" href="/estilos/style.css">
+<link rel="shortcut icon" href="/imagenes/logo.png">
 
 </head>
 <body>
 <header>
-<!-- Navbar (sit on top) -->
-<div>
-  <div class="w3-bar w3-card" id="myNavbar">
-    <a href="#home"><img class="logo" src="./imagenes/logo.png" alt=""></a>
-    <div class="w3-right w3-hide-small menu-links">
-      <a href="./secciones/turnos.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> TURNOS</a>
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
-      <a href="#tratamientos" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i> TRATAMIENTOS</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
-      <a href="./secciones/iniciarsesion.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> INICIAR SESION</a>
-    </div>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+  <div w3-include-html="/vistas/header.html"></div>
+  <div id="home">
+      <img class="w3-right imagen-hero" src="/imagenes/masajes-imagenhero2.jpg " alt="masajes">
   </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Cerrar ×</a>
-  <a href="./secciones/turnos.html" onclick="w3_close()" class="w3-bar-item w3-button">TURNOS</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
-  <a href="#tratamientos" onclick="w3_close()" class="w3-bar-item w3-button">TRATAMIENTOS</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
-  <a href="./secciones/iniciarsesion.html" onclick="w3_close()" class="w3-bar-item w3-button">INICIAR SESION</a>
-</nav>
-
-<divid="home">
-    <img class="w3-right imagen-hero" src="./imagenes/masajes-imagenhero2.jpg " alt="masajes">
-</div>
-
-<!-- About Section -->
-
-<div class="w3-container" style="padding:128px 16px" >
-  <h3 class="w3-center"  id="about">SOBRE NOSOTROS</h3>
-  <p class="w3-center w3-large" >Características claves de nuestra clínica</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter" >
-      <i class="fa fa-bullseye w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Enfoque Integral</p>
-      <p>Nosotros creemos en la sanación que considera al ser humano en su totalidad: mente, cuerpo y espíritu. Cada tratamiento está diseñado para abordar no solo los síntomas físicos, sino también los aspectos emocionales y espirituales.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Pasión</p>
-      <p>Nuestro equipo está compuesto por profesionales dedicados y apasionados por el bienestar integral. Cada miembro aporta su experiencia y compromiso para asegurar que cada paciente reciba la mejor atención posible.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-child w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Diseño de bienestar</p>
-      <p>Nuestros espacios están diseñados para promover la tranquilidad y la curación. Desde la arquitectura hasta la decoración, cada detalle está pensado para crear un ambiente relajante y revitalizante.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-search w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Seguimiento continuo</p>
-      <p>Entendemos que la sanación es un proceso continuo. Por eso, ofrecemos soporte y seguimiento personalizado para asegurarnos de que nuestros pacientes mantengan su bienestar a largo plazo.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Tratamientos Section -->
-<div class="w3-container" id="tratamientos">
-  <h3 class="w3-center">TRATAMIENTOS</h3>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="./imagenes/ventosas.jpg" alt="ventosas" style="width:100%">
-        <div class="w3-container">
-          <h3>Ventosas</h3>
-          <p class="w3-opacity">Profesional: Milagros Pereyra</p>
-          <p>Técnica utilizada para mejorar la circulación sanguínea en una región del cuerpo a través de ventosas neumáticas</p>
-          <p><button class="w3-button w3-light-grey w3-block">Ver mas</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="./imagenes/acupuntura.jpg" alt="acupuntura" style="width:100%">
-          <div class="w3-container">
-            <h3>Acupuntura</h3>
-            <p class="w3-opacity">Profesional: Milagros Pereyra</p>
-            <p>Inserción de agujas muy finas en distintas regiones específicas del cuerpo con la finalidad de restablecer el equilibrio bioeléctrico del organismo.</p>
-            <p><button class="w3-button w3-light-grey w3-block">Ver mas</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="./imagenes/masajes.jpg" alt="masajes" style="width:100%">
-          <div class="w3-container">
-            <h3>Masajes</h3>
-            <p class="w3-opacity">Profesional: Gabriela Godoy</p>
-            <p>El masaje se realiza con las manos del terapeuta realizando gestos sobre la piel del paciente como apretar, traccionar, exprimir, empujar.</p>
-            <p><button class="w3-button w3-light-grey w3-block">Ver mas</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="./imagenes/kinesiologia.jpg" alt="kinesiologia" style="width:100%">
-          <div class="w3-container">
-            <h3>Kinesiologia</h3>
-            <p class="w3-opacity">Profesional: Marcos Venegas</p>
-            <p>Diseño de programas de ejercicios para prevenir lesiones y mejorar el rendimiento atlético y la función corporal general.</p>
-            <p><button class="w3-button w3-light-grey w3-block">Ver mas</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="./imagenes/Quiropraxia.jpg" alt="Quiropraxia" style="width:100%">
-          <div class="w3-container">
-            <h3>Quiropraxia</h3>
-            <p class="w3-opacity">Profesional: Pedro Gonzalez</p>
-            <p>Consiste en manipulaciones específicas de la columna vertebral, reequilibrio neurológico, correcciones musculares, y técnicas de liberación emocional.</p>
-            <p><button class="w3-button w3-light-grey w3-block">Ver mas</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="./imagenes/moxibustion.png" alt="moxibustion" style="width:100%">
-          <div class="w3-container">
-            <h3>Moxibustion</h3>
-            <p class="w3-opacity">Profesional:  Lucia Gutierrez</p>
-            <p>Aplicación de calor en diferentes partes del cuerpo como método para estimular las diferentes partes con el fin de curar enfermedades o dolencias.</p>
-            <p><button class="w3-button w3-light-grey w3-block">Ver mas</button></p>
-          </div>
-        </div>
-      </div>
-</div>
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding: 20px; margin:20px" id="contact">
-  <h3 class="w3-center">CONTACTO</h3>
-  <p class="w3-center w3-large">Si tenes dudas, escribinos:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Florencio Varela 1236, San Justo</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefono: 1131458741</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: milagrosenergeticos@gmail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Asunto" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVIAR
-        </button>
-      </p>
-    </form>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer >
-    <div class="mapa">
-      <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1719346534496!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-      <div class="medios-de-pago"> 
-        <h5>Nuestros medios de pagos</h5>
-        <img src="./imagenes/visa.jpg" alt="visa">
-        <img src="./imagenes/mercadopago.png" alt="mercado pago">
-        <img src="./imagenes/efectivo.png" alt="efectivo">
-      </div>
-     
-      <div class="redes">
-        <h5>Seguinos en nuestras redes</h5>
-        <i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i>
-        <i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i>
-      </div>
-   
-    <p class="w3-center">Diseñado por Ayala Lazarte, Nadia | Castelli Garaycochea, Mora | Julian Borrello, Magali</p>
+</header>
+<main>
+  <div w3-include-html="/vistas/aboutUs.html"></div>
+  <div w3-include-html="/vistas/tratamientos.html"></div>
+  <div w3-include-html="/vistas/contactUs.html"></div>
+</main>
+<footer>
+  <div w3-include-html="/vistas/footer.html"></div>
 </footer>
-  
- 
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <script>
-
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-/*function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}*/
-
-
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-
-
+  w3.includeHTML();
 </script>
-
+<script src="/scripts/home.js"></script>
 </body>
 </html>

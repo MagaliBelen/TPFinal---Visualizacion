@@ -103,3 +103,23 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+  .slide-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .opcion-tratamiento {
+    flex: 0 0 33.33%; /* Ajusta este valor para mostrar 3 elementos a la vez */
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
