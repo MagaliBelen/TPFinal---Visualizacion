@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnos Disponibles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .available {
+      color: blue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Turnos Disponibles</th>
+        <th><button>&lt;</button></th>
+        <th>Lunes<br>08/07</th>
+        <th>Martes<br>09/07</th>
+        <th>Miércoles<br>10/07</th>
+        <th>Jueves<br>11/07</th>
+        <th>Viernes<br>12/07</th>
+        <th>Sábado<br>13/07</th>
+        <th>Domingo<br>14/07</th>
+        <th><button>&gt;</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>13:00 - 14:00</td>
+        <td></td>
+        <td class="available">13:45</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="available">13:00<br>13:15<br>13:30<br>13:45</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>14:00 - 15:00</td>
+        <td></td>
+        <td class="available">14:00<br>14:15<br>14:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="available">14:00<br>14:15<br>14:30<br>14:45</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

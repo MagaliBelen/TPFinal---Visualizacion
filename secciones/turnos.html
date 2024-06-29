@@ -72,7 +72,8 @@
     </nav>
   </header>
   <main>
-    <div class="container">
+    <!-- Seleccionar tratamiento -->
+    <div class="container mySlides">
       <h1>Solicitar turno</h1>
       <br>
       <div class="progress">
@@ -93,62 +94,157 @@
       <br>
       <h2>Tipo de tratamiento</h2>
       <p>Selecciona el tipo de tratamiento que se va a atender:</p>
-<div class="opciones-tratamiento">
+      <div class="opciones-tratamiento">
         <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
-         
-            <div class="w3-container">
-              <h5>Ventosas</h5>
-              <p class="w3-opacity">Profesional: Milagros Pereyra</p>
-        
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
-         
-            <div class="w3-container">
-              <h5>Acupuntura</h5>
-              <p class="w3-opacity">Profesional: Milagros Pereyra</p>
-            </div>
-         
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
-          
-            <div class="w3-container">
-              <h5>Masajes</h5>
-              <p class="w3-opacity">Profesional: Gabriela Godoy</p>
-            </div>
-          
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
-         
-            <div class="w3-container">
-              <h5>Kinesiologia</h5>
-              <p class="w3-opacity">Profesional: Marcos Venegas</p>
-         
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
-         
-            <div class="w3-container">
-              <h5>Quiropraxia</h5>
-              <p class="w3-opacity">Profesional: Pedro Gonzalez</p>
-            </div>
-          
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
-          
-            <div class="w3-container">
-              <h5>Moxibustion</h5>
-              <p class="w3-opacity">Profesional: Lucia Gutierrez</p>
-            </div>
-         
-        </div>
-    </div>
 
-    <div class="buttons">
-      <p><button class="w3-button w3-light-grey w3-block">Volver</button></p>
-      <p><button class="w3-button w3-light-grey w3-block">Siguiente</button></p>
+          <div class="w3-container">
+            <h5>Ventosas</h5>
+            <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+          <div class="w3-container">
+            <h5>Acupuntura</h5>
+            <p class="w3-opacity">Profesional: Milagros Pereyra</p>
+          </div>
+
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+          <div class="w3-container">
+            <h5>Masajes</h5>
+            <p class="w3-opacity">Profesional: Gabriela Godoy</p>
+          </div>
+
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+          <div class="w3-container">
+            <h5>Kinesiologia</h5>
+            <p class="w3-opacity">Profesional: Marcos Venegas</p>
+
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+          <div class="w3-container">
+            <h5>Quiropraxia</h5>
+            <p class="w3-opacity">Profesional: Pedro Gonzalez</p>
+          </div>
+
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom opcion-tratamiento">
+
+          <div class="w3-container">
+            <h5>Moxibustion</h5>
+            <p class="w3-opacity">Profesional: Lucia Gutierrez</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="buttons">
+        <!-- <p><button class="w3-button w3-light-grey w3-block">Volver</button></p>
+        <p><button class="w3-button w3-light-grey w3-block">Siguiente</button></p> -->
+        <a href="../index.html"><button class="w3-button w3-light-grey" onclick="">Volver</button></a>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+      </div>
+      </div>
+
+<!-- seleccionar fecha y hora -->
+<div class="container mySlides">
+  <h1>Solicitar turno</h1>
+  <br>
+  <div class="progress">
+    <div class="step active">
+      <span class="step-label">Tratamiento</span>
     </div>
-   
+    <div class="step"  style="background-color: #7BB094 ;">
+      <span class="step-label">Fecha y Hora</span>
+    </div>
+    <div class="step">
+      <span class="step-label">Confirmar</span>
+    </div>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress-bar-fill" style="width: 66%"></div>
+  </div>
+  <br>
+  <h2>Fecha y Hora</h2>
+  <p>Selecciona el dia y horario que se va a atender:</p>
+<table>
+    <thead>
+      <tr>
+        <th>Turnos Disponibles</th>
+        <th><button>&lt;</button></th>
+        <th>Lunes<br>08/07</th>
+        <th>Martes<br>09/07</th>
+        <th>Miércoles<br>10/07</th>
+        <th>Jueves<br>11/07</th>
+        <th>Viernes<br>12/07</th>
+        
+        <th><button>&gt;</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>13:00 - 14:00</td>
+        <td></td>
+        <td class="available">13:45</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="available">13:00<br>13:30</td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td>14:00 - 15:00</td>
+        <td></td>
+        <td class="available">14:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="available">14:00<br>14:30</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>15:00 - 16:00</td>
+        <td></td>
+        <td class="available">15:00<br>15:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="available">15:15<br>15:45</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>16:00 - 17:00</td>
+        
+        <td></td>
+        <td></td>
+        <td class="available">16:00<br>16:30</td>
+        <td></td>
+        <td class="available">16:15<br>16:45</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+ 
+
+  <div class="buttons">
+    <!-- <p><button class="w3-button w3-light-grey w3-block">Volver</button></p>
+    <p><button class="w3-button w3-light-grey w3-block">Siguiente</button></p> -->
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Volver</button>
+<button class="w3-button w3-light-grey" onclick="plusDivs(1)">Siguiente</button>
+  </div>
+ 
   </main>
   <!-- Footer -->
   <footer>
@@ -174,6 +270,35 @@
 
     <p class="w3-center">Diseñado por Ayala Lazarte, Nadia | Castelli Garaycochea, Mora | Julian Borrello, Magali</p>
   </footer>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-red", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-red";
+    }
+    </script>
 
   <script>
     // Add event listeners to pet options
@@ -229,17 +354,17 @@
 
   </script>
 
-<script>
-  // Seleccionar todos los elementos con la clase 'color-box'
-  const boxes = document.querySelectorAll('.opcion-tratamiento');
+  <script>
+    // Seleccionar todos los elementos con la clase 'color-box'
+    const boxes = document.querySelectorAll('.opcion-tratamiento');
 
-  // Añadir un evento de clic a cada elemento
-  boxes.forEach(box => {
+    // Añadir un evento de clic a cada elemento
+    boxes.forEach(box => {
       box.addEventListener('click', () => {
-          box.classList.toggle('clicked');
+        box.classList.toggle('clicked');
       });
-  });
-</script>
+    });
+  </script>
 
   <!-- Font Awesome Icons (replace with your CDN link) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

@@ -103,3 +103,26 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+
+/*turnos fecha y hora*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.available {
+  color: blue;
+  cursor: pointer;
+}
