@@ -135,7 +135,6 @@ th {
 
 
 
-
 @media (max-width: 768px) {
 
   h1{
@@ -183,4 +182,7 @@ p{
       text-align: left;
       font-weight: bold;
   }
+ 
+
 }
+
