@@ -7,6 +7,7 @@ main {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -46,11 +47,7 @@ h1 {
   background-color:#7BB094 ;
 }
 
-.step-label {
-  font-size: 14px;
-  color: #333;
-  
-}
+
 
 .progress-bar {
   flex: 1;
@@ -96,6 +93,10 @@ h1 {
 }
 
 .opcion-tratamiento.clicked {
+  background-color:#7BB094 ;
+}
+
+.available.clicked {
   background-color:#7BB094 ;
 }
 
