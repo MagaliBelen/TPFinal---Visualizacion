@@ -36,10 +36,21 @@ form{
     text-decoration: underline
 }
 
+.caja-gris{
+    width:400px; 
+    height:100vh;
+}
+
 @media (max-width:600px){
 main{
     background-image: none;
     height: 600px;
+}
+
+.caja-gris{
+    width:100%; 
+    margin: 0;
+   
 }
 
 }

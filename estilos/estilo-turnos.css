@@ -186,14 +186,6 @@ p{
 
 }
 
-  /* Estilos para el botón */
-  #openPopupBtn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
 /* Estilos para el popup */
 .popup {
@@ -220,7 +212,7 @@ p{
     z-index: 999;
 }
 
-/* Estilos para el botón de cerrar */
+/* Estilos para el botón de volver a inicio */
 .closeBtn {
   background-color:#7BB094 ;
     color: white;
