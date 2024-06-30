@@ -48,8 +48,13 @@ body, html {
 }
 
 .w3-card img{
-    height: 200px;
-    width: auto;
+    height: 250px;
+ 
+}
+
+#tratamientos{
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .imagen-hero{
