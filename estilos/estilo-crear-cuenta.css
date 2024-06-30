@@ -1,22 +1,6 @@
-form{
-    font-family: "Raleway", sans-serif;
-}
-
-.caja-gris{
-    width:400px; 
-    height:100vh;
-}
-
 @media (max-width:600px){
     main{
         height: 700px;
     }
 
-    .caja-gris{
-        width:100%; 
-        margin: 0;
-       
-    }
-
 }
-

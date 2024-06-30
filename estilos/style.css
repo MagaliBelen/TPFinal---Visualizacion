@@ -1,19 +1,29 @@
+
+* {font-family: "Raleway", sans-serif;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
 body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
-  font-family: "Raleway", sans-serif;
+h6 {
+  font-family: "Raleway", sans-serif
 }
 
-header{
-    font-family: "Raleway", sans-serif;
-  }
-  
-
-body, html {
+body,
+html {
   height: 100%;
   line-height: 1.8;
 }
@@ -48,15 +58,14 @@ body, html {
 }
 
 .w3-card img{
-    height: 250px;
- 
+    height: 200px;
+    width: auto;
 }
 
 #tratamientos{
     margin-left: 25px;
     margin-right: 25px;
 }
-
 .imagen-hero{
    
     width: 100%;
@@ -64,8 +73,6 @@ body, html {
     height: auto;
 } 
 
-
-/*Footer*/
 
 footer{
     background-color: #7BB094 !important;
@@ -75,7 +82,7 @@ footer{
     width: 100% !important;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-top: 20px;
 
 }
 
