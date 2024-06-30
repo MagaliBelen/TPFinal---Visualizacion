@@ -4,7 +4,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,p {
   font-family: "Raleway", sans-serif;
 }
 
@@ -59,6 +59,8 @@ body, html {
     height: auto;
 } 
 
+
+/*Footer*/
 
 footer{
     background-color: #7BB094 !important;

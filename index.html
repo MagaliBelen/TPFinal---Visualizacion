@@ -46,8 +46,12 @@
   <a href="./secciones/iniciarsesion.html" onclick="w3_close()" class="w3-bar-item w3-button">INICIAR SESION</a>
 </nav>
 
-<divid="home">
-    <img class="w3-right imagen-hero" src="./imagenes/masajes-imagenhero2.jpg " alt="masajes">
+<div id="home" class="contenedor-imagen-hero">
+    <img class="w3-right imagen-hero" src="./imagenes/image-hero-texto.png" alt="masajes">
+    <!-- <div class="texto-imagen-hero w3-display-middle-left w3-padding">
+      <h1>Atención de primer nivel</h1>
+     <p> Experiencia y Dedicación<br>Tu Bienestar es Nuestra Prioridad</p>
+  </div> -->
 </div>
 
 <!-- About Section -->
@@ -213,19 +217,6 @@ function onClick(element) {
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
-
-/*function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}*/
 
 
 function w3_open() {
