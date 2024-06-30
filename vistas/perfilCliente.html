@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Completo del Paciente</title>
+    <title>Milagros Energeticos</title>
+    <link rel="stylesheet" href="/estilos/estilo-iniciar-sesion.css">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/imagenes/logo.png">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawCharts);
@@ -12,15 +19,15 @@
         function drawCharts() {
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Work', 11],
-                ['Eat', 2],
-                ['Commute', 2],
-                ['Watch TV', 2],
-                ['Sleep', 7]
+                ['Acupuntura', 11],
+                ['Ventosas', 2],
+                ['Moxibustion', 2],
+                ['Masajes', 2],
+                ['Quiropraxia', 7]
             ]);
 
             var options = {
-                title: 'Actividades Diarias'
+                title: 'Tratamientos'
             };
 
             var chart1 = new google.visualization.PieChart(document.getElementById('piechart1'));
@@ -84,13 +91,12 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <div>
-                <img src="logo.png" alt="LOGO">
-            </div>
-        </div>
+    <header>
+        <div w3-include-html="/vistas/header.html"></div>
+    </header>
+    <main>
         <div class="main">
             <h1>Perfil completo del paciente</h1>
             <h2>Estadísticas de seguimiento</h2>
@@ -100,16 +106,22 @@
                 <div id="piechart3" class="chart"></div>
             </div>
             <div class="sidebar">
-                <div class="item">Elemento 1</div>
-                <div class="item">Elemento 2</div>
-                <div class="item">Elemento 3</div>
-                <div class="item">Elemento 4</div>
+                <div class="item">Tratamiento 29-06</div>
+                <div class="item">Tratamiento 7-07</div>
+                <div class="item">Tratamiento 14-07</div>
+                <div class="item">Tratamiento 21-07</div>
             </div>
         </div>
-        <div class="footer">
-            <div style="display: inline-block; width: 100px; height: 100px; background-color: #e0e0e0; margin-right: 20px;"></div>
-            <div style="display: inline-block; width: 400px; height: 100px; background-color: #e0e0e0;"></div>
-        </div>
-    </div>
-</body>
-</html>
+    </main>
+    <footer>
+         <div w3-include-html="/vistas/footer.html"></div>
+    </footer>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="/script/inicioSesion.js"></script>
+    <script src="/scripts/home.js"></script>
+    <script>
+      w3.includeHTML();
+    </script>
+    </body>
+    </html>
+    

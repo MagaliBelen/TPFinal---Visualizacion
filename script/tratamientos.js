@@ -40,3 +40,4 @@ function moveSlide(direction) {
 
   slideInner.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
+

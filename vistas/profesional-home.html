@@ -13,8 +13,8 @@
     <body>
         <div>
         <div class="w3-bar w3-card" id="myNavbar">
-          <a href="#"><img class="logo" src="imagenes\logo.png" alt=""></a>
-          <div class="w3-right w3-hide-small menu-links">
+          <a href="index.html"><img class="logo" src="../imagenes/logo.png" alt=""></a>
+            <div class="w3-right w3-hide-small menu-links">
             <a href="turnos.html" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> TURNOS</a>
             <a href="aboutUs.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
             <a href="tratamientos.html" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i> TRATAMIENTOS</a>
@@ -35,12 +35,14 @@
         <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTO</a>
         <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">VER PERFIL</a>
       </nav>
-      
+      <div id="home">
+        <img class="w3-right imagen-hero" src="/imagenes/masajes-imagenhero2.jpg " alt="masajes">
+    </div>
 </header>
 <main>
-  <div w3-include-html="aboutUs.html"></div>
-  <div w3-include-html="tratamientos.html"></div>
-  <div w3-include-html="contactUs.html"></div>
+  <div w3-include-html="/vistas/aboutUsIndex.html"></div>
+  <div w3-include-html="/vistas/tratamientosIndex.html"></div>
+  <div w3-include-html="/vistas/contactUsIndex.html"></div>
 </main>
 <footer>
   <div w3-include-html="footer.html"></div>

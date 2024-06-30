@@ -23,8 +23,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     var email = document.getElementById("Email").value;
     var password = document.getElementById("Password").value;
 
-    if (email === "cliente" && password === "cliente") {
+    if (email === "cliente" && password === "123") {
         window.location.href = "cliente-home.html"; // Redirect to the client's home page
+    } else if (email === "profesional" && password === "123") {
+        window.location.href = "profesional-home.html"; // Redirect to the client's home page
     } else {
         alert("Usuario o contraseña incorrectos");
     }
